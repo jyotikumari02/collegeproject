@@ -11,7 +11,7 @@ section
     width: 80%;
     height: 100vh;
     display: flex;
-    flex-direction:;
+    flex-direction:row;
     margin: 200px;
 }
 .imgBx
@@ -54,16 +54,20 @@ section
 }
 .iconM .icon
 {
-    border: #607d8b solid;
+   /* border: #607d8b solid;*/
     width: 100px;
     height: 90px;
     border-radius: 50px;
     margin:20px;
-    margin-left: 80px;
-    background-image: url('adminImg.jpg');
-    background-repeat: no-repeat;
-    background-attachment: ;
+    margin-left: 50px;
 }
+.iconM .icon .adIm
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 52px; 
+}
+
 .iconM h1
 {
     color: black;
@@ -86,7 +90,6 @@ section
     width: 40%;
     height: 90%;
     background-color: rgb(153, 196, 159);
-    padding: 1%;
 }
 
 .contentBx .formBx
@@ -167,4 +170,20 @@ section
 .contentBx .formBx .submitBx button:hover
 {
     background: transparent;
+}
+@media(max-width:1000px)
+{
+    section
+    {
+        display: flex;
+        margin:auto;
+        flex-direction: column;
+        width: 90%;
+    }
+    .contentBx{
+        width: 100%;
+    }
+    .imgBx{
+        width: 100%;
+    }
 }
