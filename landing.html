@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>landding</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+    /*  .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color:#007bff;
+        border: solid #007bff;
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em #00d9ff, inset 0 .125em .5em #00d9ff;
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }*/
+
+      .mt-md-5
+      {
+        margin-top: 25rem!important;
+      }
+
+        
+             /*nav contact us
+             #dm
+             {
+              width: 24rem; 
+              left:50%; 
+              margin-left:-218px;
+             }*/
+          
+
+      /*about us */
+
+      
+                  
+            .card::before
+                   {
+                    content: "";
+                    position: absolute;
+                    height: 40%;
+                    width: 100%;
+                    background: blueviolet;
+                    border-radius: 20px 20px 0 0;
+                   }
+
+                   .card .card-body
+                   {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 30px;
+                    position: relative;
+                    z-index: 100;
+                   }
+                   .card .media-icon 
+                   {
+                    position: absolute;
+                    top: 10px;
+                    right: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                   }
+
+                   .card .media-icon i
+                   {  
+                    color: #fff;
+                    opacity: 0.6;
+                    margin-top: 10px;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                   }
+
+                   .card .media-icon i:hover
+                   {
+                    opacity: 1;
+                   }
+
+                   .card .name-profession
+                   {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 10px;
+                    color: #333;
+                   }
+                   .name-profession .name
+                   {
+                    font-size: 20px;
+                    font-weight: 600;
+                   }
+
+                   .name-profession .profession
+                   {
+                    font-size: 15px;
+                    font-weight: 500;
+                   }
+
+                   .card .rating
+                   {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 18px;
+                   }
+
+                   .card .rating i
+                   {
+                    font-size: 18px;
+                    margin: 0 2px;
+                    color: #007bff;
+                   }
+
+                   .card .button
+                   {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: 20px;
+                   }
+
+                   .card .button button
+                   {
+                     background:#0cc0fe;
+                     outline: none;
+                     border: none;
+                     color: #fff;
+                     padding: 8px 22px;
+                     border-radius: 20px;
+                     font-size:  14px;
+                     transition: all 0.3s ease;
+                     cursor: pointer;
+                   }
+                  
+                   .button button:hover
+                   {
+                    background: #007bff;
+                   }
+                   /* about us end*/
+
+                 .carousel-control-next-icon,
+                 .carousel-control-prev-icon 
+                 {
+                    filter: invert(1);
+                 }
+          
+
+            .path-0{
+              animation:pathAnim-0 4s;
+              animation-timing-function: linear;
+              animation-iteration-count: infinite;
+            }
+            @keyframes pathAnim-0{
+              0%{
+                d: path("M 0,500 C 0,500 0,250 0,250 C 55.64548265200962,304.22329096530405 111.29096530401924,358.44658193060803 177,338 C 242.70903469598076,317.55341806939197 318.48162143593265,222.43696324287188 397,185 C 475.51837856406735,147.56303675712812 556.7825489522501,167.8055650979045 620,201 C 683.2174510477499,234.1944349020955 728.3881827550671,280.3407763655101 801,304 C 873.6118172449329,327.6592236344899 973.6647200274817,328.831329440055 1046,308 C 1118.3352799725183,287.168670559945 1162.9529371350052,244.33390587427002 1224,231 C 1285.0470628649948,217.66609412572998 1362.5235314324973,233.83304706286498 1440,250 C 1440,250 1440,500 1440,500 Z");
+              }
+              25%{
+                d: path("M 0,500 C 0,500 0,250 0,250 C 65.12607351425626,263.07179663345926 130.25214702851252,276.1435932669186 196,274 C 261.7478529714875,271.8564067330814 328.1174854002062,254.49742356578497 399,267 C 469.8825145997938,279.50257643421503 545.277911370663,321.86671246994155 612,317 C 678.722088629337,312.13328753005845 736.7708691171418,260.0357265544487 813,221 C 889.2291308828582,181.96427344555133 983.6386121607695,155.99038131226382 1063,177 C 1142.3613878392305,198.00961868773618 1206.6746822397802,266.00274819649604 1267,286 C 1327.3253177602198,305.99725180350396 1383.66265888011,277.998625901752 1440,250 C 1440,250 1440,500 1440,500 Z");
+              }
+              50%{
+                d: path("M 0,500 C 0,500 0,250 0,250 C 85.73754723462727,284.58673995190657 171.47509446925454,319.17347990381313 236,339 C 300.52490553074546,358.82652009618687 343.837169357609,363.89282033665404 406,320 C 468.162830642391,276.10717966334596 549.1762281003092,183.2552387495706 627,175 C 704.8237718996908,166.7447612504294 779.4579182411542,243.08622466506358 850,256 C 920.5420817588458,268.9137753349364 986.9920989350737,218.39986259017516 1040,218 C 1093.0079010649263,217.60013740982484 1132.5736860185505,267.31432497423566 1197,281 C 1261.4263139814495,294.68567502576434 1350.7131569907247,272.34283751288217 1440,250 C 1440,250 1440,500 1440,500 Z");
+              }
+              75%{
+                d: path("M 0,500 C 0,500 0,250 0,250 C 56.412229474407425,288.4294057025077 112.82445894881485,326.85881140501544 183,318 C 253.17554105118515,309.14118859498456 337.11439367914807,252.99416008244594 411,252 C 484.88560632085193,251.00583991755406 548.717966334593,305.16454826520095 606,310 C 663.282033665407,314.83545173479905 714.0137409824802,270.3476468567502 786,239 C 857.9862590175198,207.65235314324977 951.2270697354861,189.444864307798 1028,213 C 1104.772930264514,236.555135692202 1165.0779800755754,301.87289591205774 1231,315 C 1296.9220199244246,328.12710408794226 1368.4610099622123,289.06355204397113 1440,250 C 1440,250 1440,500 1440,500 Z");
+              }
+              100%{
+                d: path("M 0,500 C 0,500 0,250 0,250 C 55.64548265200962,304.22329096530405 111.29096530401924,358.44658193060803 177,338 C 242.70903469598076,317.55341806939197 318.48162143593265,222.43696324287188 397,185 C 475.51837856406735,147.56303675712812 556.7825489522501,167.8055650979045 620,201 C 683.2174510477499,234.1944349020955 728.3881827550671,280.3407763655101 801,304 C 873.6118172449329,327.6592236344899 973.6647200274817,328.831329440055 1046,308 C 1118.3352799725183,287.168670559945 1162.9529371350052,244.33390587427002 1224,231 C 1285.0470628649948,217.66609412572998 1362.5235314324973,233.83304706286498 1440,250 C 1440,250 1440,500 1440,500 Z");
+              }
+            }
+            @media (min-width: 746px)
+             {
+              .dropdown-menu
+              {
+                width: 1rem; 
+                left:0%; 
+                margin-right:-5rem;
+
+              }
+             }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+    <link href="navbar.css" rel="stylesheet">
+    <link href="cover.css" rel="stylesheet">
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg text-white" aria-label="Offcanvas navbar large">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">CMS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-white" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">CMS</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="offcanvasNavbarLgDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  LogIn
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarLgDropdown">
+                  <li><a class="dropdown-item" href="#">Faculaty</a></li>
+                  <li><a class="dropdown-item" href="#">Student</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ContactUs
+                </a>
+                <ul class="dropdown-menu mt-2"  style="width: 220px;">
+                  <form class="px-2 py-2">
+                    <div class="mb-2">
+                      <label for="InputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-2">
+                      <label for="Textarea1" class="form-label">Textarea</label>
+                      <textarea class="form-control" id="Textarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+
+  <div class="cover-container d-flex w-500 h-100 mx-auto flex-column" id="cov">
+        <div class="md-auto">
+          <h1 class="text-center" >College Management System</h1>
+        </div>
+        <h3 class="text-center" style="margin-top: 50px; color: #333;">CMS of B S City College</h3>
+        <div id="discription" class="container text-center" style="color: rgb(12, 11, 11);">The college management system is a ERP 
+          Software that is a new version of
+           managing Information System of College</div>
+        <p class="lead" style="margin-left: 350px; margin-top: 20px; margin-bottom: 0px;">
+          <a href="#" class="btn btn-lg btn-secondary  fw-bold " style="background:#0cc0fe; color: #fff;" >Learn more</a>
+        </p>
+        <div>
+          <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+          <defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#002bdcff"></stop><stop offset="95%" stop-color="#32ded4ff"></stop></linearGradient></defs><path d="M 0,500 C 0,500 0,250 0,250 C 55.64548265200962,304.22329096530405 111.29096530401924,358.44658193060803 177,338 C 242.70903469598076,317.55341806939197 318.48162143593265,222.43696324287188 397,185 C 475.51837856406735,147.56303675712812 556.7825489522501,167.8055650979045 620,201 C 683.2174510477499,234.1944349020955 728.3881827550671,280.3407763655101 801,304 C 873.6118172449329,327.6592236344899 973.6647200274817,328.831329440055 1046,308 C 1118.3352799725183,287.168670559945 1162.9529371350052,244.33390587427002 1224,231 C 1285.0470628649948,217.66609412572998 1362.5235314324973,233.83304706286498 1440,250 C 1440,250 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
+        </div>
+      </div>
+      
+
+      <div class="cover-container d-flex w-200 h-100  p-6 mx-auto flex-column">
+        <img id="pic1" class="img-fluid" src="Crypto.png" alt="img">
+       </div> 
+
+       <!--About us-->
+
+       
+   
+       <div id="carouselControls" class="carousel slide bg-light"  data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container p-5">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="card" style="border-radius: 20px;">
+                    <div class="card-body">
+                     <img class="rounded-circle" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"data-holder-rendered="true">
+  
+                      <div class="media-icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                      </div>
+                      
+                      <div class="name-profession">
+                        <span class="name">Kaushal kishor</span>
+                        <span class="profession">Website </span>
+                      </div>
+    
+                      <div class="rating">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="far fa-star"></i>
+                         <i class="far fa-star"></i>
+                      </div>
+    
+                      <div class="button">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Hire Me</button>
+                      </div>
+                    </div><!--card body-->
+                  </div><!--card-->
+                </div><!--col-lg-4-->
+                <div class="col-lg-4">
+                                  <div class="card" style="border-radius: 20px;">
+                    <div class="card-body">
+                     <img class="rounded-circle" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"data-holder-rendered="true">
+                     
+                      <div class="media-icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                      </div>
+                      
+                      <div class="name-profession">
+                        <span class="name">Jyoti kumari</span>
+                        <span class="profession">Website </span>
+                      </div>
+    
+                      <div class="rating">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="far fa-star"></i>
+                         <i class="far fa-star"></i>
+                      </div>
+    
+                      <div class="button">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Hire Me</button>
+                      </div>
+                    </div><!--card body-->
+                  </div><!--card-->
+                </div><!--col-lg-4-->
+                <div class="col-lg-4">
+                  <div class="card" style="border-radius: 20px;">
+                    <div class="card-body">
+                     <img class="rounded-circle" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"data-holder-rendered="true">
+                     
+                      <div class="media-icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                      </div>
+                      
+                      <div class="name-profession">
+                        <span class="name">Amarjeet Kumar</span>
+                        <span class="profession">Website </span>
+                      </div>
+    
+                      <div class="rating">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="far fa-star"></i>
+                         <i class="far fa-star"></i>
+                      </div>
+    
+                      <div class="button">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Hire Me</button>
+                      </div>
+                    </div><!--card body-->
+                  </div><!--card-->
+                </div><!--col-lg-4-->
+              </div><!--row-->
+            </div><!--container-->
+          </div>
+          <div class="carousel-item">
+            <div class="container p-5">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="card" style="border-radius: 20px;">
+                    <div class="card-body">
+                     <img class="rounded-circle" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"data-holder-rendered="true">
+                     
+                      <div class="media-icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                      </div>
+                      
+                      <div class="name-profession">
+                        <span class="name">someone name</span>
+                        <span class="profession">Website </span>
+                      </div>
+    
+                      <div class="rating">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="far fa-star"></i>
+                         <i class="far fa-star"></i>
+                      </div>
+    
+                      <div class="button">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Hire Me</button>
+                      </div>
+                    </div><!--card body-->
+                  </div><!--card-->
+                </div><!--col-lg-4-->
+                <div class="col-lg-4">
+                  <div class="card" style="border-radius: 20px;">
+                    <div class="card-body">
+                     <img class="rounded-circle" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"data-holder-rendered="true">
+                     
+                      <div class="media-icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                      </div>
+                      
+                      <div class="name-profession">
+                        <span class="name">someone name</span>
+                        <span class="profession">Website </span>
+                      </div>
+    
+                      <div class="rating">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="far fa-star"></i>
+                         <i class="far fa-star"></i>
+                      </div>
+    
+                      <div class="button">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Hire Me</button>
+                      </div>
+                    </div><!--card body-->
+                  </div><!--card-->
+                </div><!--col-lg-4-->
+                <div class="col-lg-4">
+                  <div class="card" style="border-radius: 20px;">
+                    <div class="card-body">
+                     <img class="rounded-circle" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"data-holder-rendered="true">
+                     
+                      <div class="media-icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                      </div>
+                      
+                      <div class="name-profession">
+                        <span class="name">someone name</span>
+                        <span class="profession">Website </span>
+                      </div>
+    
+                      <div class="rating">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="far fa-star"></i>
+                         <i class="far fa-star"></i>
+                      </div>
+    
+                      <div class="button">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Hire Me</button>
+                      </div>
+                    </div><!--card body-->
+                  </div><!--card-->
+                </div><!--col-lg-4-->
+              </div><!--row-->
+            </div><!--container-->
+          </div>
+          <div class="carousel-item">
+            <div class="container p-5">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="card" style="border-radius: 20px;">
+                    <div class="card-body">
+                     <img class="rounded-circle" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"data-holder-rendered="true">
+                     
+                      <div class="media-icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                      </div>
+                      
+                      <div class="name-profession">
+                        <span class="name">someone name</span>
+                        <span class="profession">Website </span>
+                      </div>
+    
+                      <div class="rating">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="far fa-star"></i>
+                         <i class="far fa-star"></i>
+                      </div>
+    
+                      <div class="button">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Hire Me</button>
+                      </div>
+                    </div><!--card body-->
+                  </div><!--card-->
+                </div><!--col-lg-4-->
+                <div class="col-lg-4">
+                  <div class="card" style="border-radius: 20px;">
+                    <div class="card-body">
+                     <img class="rounded-circle" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"data-holder-rendered="true">
+                     
+                      <div class="media-icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                      </div>
+                      
+                      <div class="name-profession">
+                        <span class="name">someone name</span>
+                        <span class="profession">Website </span>
+                      </div>
+    
+                      <div class="rating">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="far fa-star"></i>
+                         <i class="far fa-star"></i>
+                      </div>
+    
+                      <div class="button">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Hire Me</button>
+                      </div>
+                    </div><!--card body-->
+                  </div><!--card-->
+                </div><!--col-lg-4-->
+                <div class="col-lg-4">
+                  <div class="card" style="border-radius: 20px;">
+                    <div class="card-body">
+                     <img class="rounded-circle" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"data-holder-rendered="true">
+                     
+                      <div class="media-icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                      </div>
+                      
+                      <div class="name-profession">
+                        <span class="name">someone name</span>
+                        <span class="profession">Website </span>
+                      </div>
+    
+                      <div class="rating">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="far fa-star"></i>
+                         <i class="far fa-star"></i>
+                      </div>
+    
+                      <div class="button">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Hire Me</button>
+                      </div>
+                    </div><!--card body-->
+                  </div><!--card-->
+                </div><!--col-lg-4-->
+              </div><!--row-->
+            </div><!--container-->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+       <!--About us end-->
+        
+   
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="bootstrap" viewBox="0 0 118 94">
+        <title>Bootstrap</title>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+      </symbol>
+      <symbol id="twitter" viewBox="0 0 16 16">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+      </symbol>
+    </svg>
+
+    <div class="container-fluid overflow-hidden">
+      <div class="row">
+          <div class="col-md-7">
+              <div class="row d-flex flex-column flex-sm-row justify-content-between" style="background-color: #007bff; height: 469px; border-bottom-right-radius:100%;">
+                  <div class="col-md-6 align-self-end mt-auto ">
+                      <p class="text-white">&copy; 2022 All rights reserved.</p>
+                  </div><!--col-md-6-->
+                  <div class="col-md-6 align-self-end mt-auto">
+                      <ul class="list-unstyled d-flex">
+                          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                        </ul>
+                  </div><!--col-md-6-->
+              </div><!--2nd row-->
+          </div><!--col-md-7-->
+          <div class="col-md-5">
+              <img class="img-responsive" src="page-thumb.png" alt="img">
+          </div><!--col-md-5-->
+      </div><!--main row-->
+    </div><!--container-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+      </script>
+  </body>
+</html>
